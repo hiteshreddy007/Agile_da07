@@ -12,7 +12,7 @@ probation_count = sum(1 for s in students if s["status"] == "Probation")
 
 # Write the build artifact report
 with open("report.txt", "w") as f:
-    f.write("=== STUDENT ACADEMIC PERFORMANCE REPORT ===\n")
+    f.write("=== STUDENT ACADEMIC PERFORMANCE REPORT (CHANGED Report)===\n")
     f.write(f"Total Records Processed: {total_students}\n")
     f.write(f"Average Institutional GPA: {avg_gpa:.2f}\n")
     f.write(f"Students on Academic Probation: {probation_count}\n\n")
