@@ -11,7 +11,7 @@ avg_gpa = sum(s["gpa"] for s in students) / total_students
 probation_count = sum(1 for s in students if s["status"] == "Probation")
 
 # Write the build artifact report
-with open("academic_report.txt", "w") as f:
+with open("report.txt", "w") as f:
     f.write("=== STUDENT ACADEMIC PERFORMANCE REPORT ===\n")
     f.write(f"Total Records Processed: {total_students}\n")
     f.write(f"Average Institutional GPA: {avg_gpa:.2f}\n")
